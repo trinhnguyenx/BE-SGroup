@@ -1,0 +1,3 @@
+yarn
+npx knex migrate:up
+yarn start
