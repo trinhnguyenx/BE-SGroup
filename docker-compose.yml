@@ -4,16 +4,16 @@ services:
 
   db:
     image: mysql
+    ports:
+      - 3307:3306
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-
       MYSQL_ROOT_PASSWORD: abc
       MYSQL_DATABASE: uservue
       MYSQL_USER: db_user
       MYSQL_PASSWORD: abc1
-    ports:
-      - 3307:3306
+    
 
 
 
